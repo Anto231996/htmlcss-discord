@@ -57,6 +57,10 @@ nav ul li a{
     text-decoration: none;
 }
 
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
 nav #button-header #sign-in{
     float: right;
     padding: 12px;
