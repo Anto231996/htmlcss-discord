@@ -25,9 +25,9 @@ header{
 }
 
 .container{
-    width: 75%;
+    width: 70%;
     height: 76vh;
-    margin: 0 auto 70px;
+    margin: 0 auto;
 }
 
 nav{
@@ -43,7 +43,7 @@ nav #nav-bar{
     width: calc(50% - 60px);
     margin: 10px 30px;
     float: left;
-    text-align: end;
+    text-align: right;
 }
 
 nav ul li{
@@ -52,7 +52,7 @@ nav ul li{
 }
 
 nav ul li a{
-    margin-right: 50px;
+    margin-right: 40px;
     color: white;
     text-decoration: none;
 }
@@ -74,6 +74,7 @@ button{
 }
 
 header #jumbotron-text{
+    width: 40%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -83,12 +84,12 @@ header #jumbotron-text{
 }
 
 header #jumbotron-text h1{
-    font-size: 65px;
+    font-size: 55px;
     margin-bottom: 50px;
 }
 
 header #jumbotron-text p, header #jumbotron-text button{
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 30px;
     line-height: 1.5;
 }
@@ -99,38 +100,40 @@ header #jumbotron-text button#black{
     margin-left: 50px;
 }
 
+.img-column, .img-column-inv{
+    width: 73%;
+}
+
 .img-column{
-    width: 65%;
     float: left;
 }
 
-.text-column, .text-column-2 {
-    width: 35%;
+.img-column-inv, .img-column-inv img{
+    float: right;
+}
+
+.text-column, .text-column-inv {
+    width: 27%;
     display: inline-block;
     padding-top: 20px;
 }
 
-.text-column h1, .text-column-2 h1{
-    font-size: 69px;
+.text-column h1, .text-column-inv h1{
+    font-size: 48px;
     color: #23272a;
     margin-bottom: 50px;
 }
 
-.text-column p, .text-column-2 p{
-    font-size: 30px;
-    line-height: 40px;
-}
-
-.img-column-2{
-    width: 65%;
-    float: right;
-}
-
-#img-two{
-    float: right;
+.text-column p, .text-column-inv p{
+    font-size: 21px;
+    line-height: 30px;
 }
 
 #bg-gray{
     background-color: #f6f6f6;
     width: 100%;
+}
+
+.wrapper{
+    padding: 109px 0;
 }
