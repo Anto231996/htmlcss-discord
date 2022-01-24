@@ -18,49 +18,37 @@ body{
 }
 
 header{
-    height: 70vh;
-    width: 100%;
     background-image: url(../img/jumbo.png);
     background-size: cover;
     position: relative;
+    width: 100%;
 }
 
 .container{
     width: 75%;
-    margin: 0 auto;
+    height: 76vh;
+    margin: 0 auto 70px;
 }
 
 nav{
     padding-top: 30px;
-    font-weight: 700;
-    font-size: 15px;
 }
 
-nav #logo-header{
+nav #logo-header, nav #button-header{
     width: 25%;
     float: left;
 }
 
 nav #nav-bar{
     width: calc(50% - 60px);
-    margin: 0 30px;
+    margin: 10px 30px;
     float: left;
-}
-
-nav #button-header{
-    width: 25%;
-    float: left;
-}
-
-nav #button-header .sign-in{
-    margin-left: 70px;
-    padding: 12px;
-    border-radius: 50px;
-    background-color: white;
+    text-align: end;
 }
 
 nav ul li{
     display: inline-block;
+    font-weight: bold;
 }
 
 nav ul li a{
@@ -69,8 +57,19 @@ nav ul li a{
     text-decoration: none;
 }
 
+nav #button-header #sign-in{
+    float: right;
+    padding: 12px;
+}
+
+button{
+    background-color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
 header #jumbotron-text{
-    width: 49%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -84,23 +83,50 @@ header #jumbotron-text h1{
     margin-bottom: 50px;
 }
 
-header #jumbotron-text p{
+header #jumbotron-text p, header #jumbotron-text button{
     font-size: 25px;
     margin-bottom: 30px;
     line-height: 1.5;
-}
-
-header #jumbotron-text button{
-    background-color: white;
-    border: none;
-    color: black;
-    padding: 15px 30px;
-    border-radius: 50px;
-    font-size: 25px;
 }
 
 header #jumbotron-text button#black{
     background-color: #23272a;
     color: white;
     margin-left: 50px;
+}
+
+.img-column{
+    width: 65%;
+    float: left;
+}
+
+.text-column, .text-column-2 {
+    width: 35%;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.text-column h1, .text-column-2 h1{
+    font-size: 69px;
+    color: #23272a;
+    margin-bottom: 50px;
+}
+
+.text-column p, .text-column-2 p{
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.img-column-2{
+    width: 65%;
+    float: right;
+}
+
+#img-two{
+    float: right;
+}
+
+#bg-gray{
+    background-color: #f6f6f6;
+    width: 100%;
 }
