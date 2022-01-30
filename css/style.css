@@ -61,16 +61,13 @@ nav ul li a:hover{
     text-decoration: underline;
 }
 
-nav #button-header #sign-in{
-    float: right;
-    padding: 12px;
-}
-
-button{
+nav #button-header a#sign-in{
+    padding: 10px 15px;
     background-color: white;
-    border: none;
-    padding: 15px 30px;
     border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
 }
 
 header #jumbotron-text{
@@ -88,16 +85,25 @@ header #jumbotron-text h1{
     margin-bottom: 50px;
 }
 
-header #jumbotron-text p, header #jumbotron-text button{
+header #jumbotron-text p, header #jumbotron-text a{
     font-size: 20px;
     margin-bottom: 30px;
     line-height: 1.5;
 }
 
-header #jumbotron-text button#black{
+header #jumbotron-text a#black, header #jumbotron-text a#white{
+    padding: 10px 15px ;
+    border-radius: 25px;
+}
+
+header #jumbotron-text a#black{
     background-color: #23272a;
-    color: white;
     margin-left: 50px;
+}
+
+header #jumbotron-text a#white{
+    background-color: white;
+    color: black;
 }
 
 .img-column, .img-column-inv{
@@ -118,22 +124,130 @@ header #jumbotron-text button#black{
     padding-top: 20px;
 }
 
-.text-column h1, .text-column-inv h1{
+h2{
     font-size: 48px;
     color: #23272a;
     margin-bottom: 50px;
 }
 
-.text-column p, .text-column-inv p{
+.text-column p, .text-column-inv p, section#last-section p{
     font-size: 21px;
     line-height: 30px;
 }
 
-#bg-gray{
+.bg-gray{
     background-color: #f6f6f6;
     width: 100%;
 }
 
 .wrapper{
     padding: 109px 0;
+}
+
+section#last-section div#text-last-section{
+    width: 55%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+section#last-section div#img-big{
+    text-align: center;
+}
+
+section#last-section div#img-big img{
+    width: 65%;
+    margin-bottom: 25px;
+}
+
+section#last-section div#download{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+section#last-section div#download h6{
+    font-size: 30px;
+    margin-bottom: 45px;
+}
+
+section#last-section div#download a, footer a{
+    background-color: #8ea1e1;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.fa-long-arrow-alt-down{
+    margin-right: 10px;
+}
+
+footer{
+    background-color: #23272a;
+}
+
+.float-left{
+    float: left;
+
+}
+
+.float-right{
+    float: right;
+}
+
+#col-left{
+    width: 30%;
+    margin-right: 25px;
+}
+
+.col-right{
+    width: 15%;
+    margin: 10px 25px 0 0;
+}
+
+footer div#info-footer{
+    height: 60%;
+}
+
+footer h6, footer h4{
+    font-size:16px ;
+    margin-bottom: 7px;
+    color: #7289da;
+    padding-top: 60px;
+}
+
+footer ul li{
+    text-decoration: none;
+    display: block;
+    line-height: 30px;
+    color: white;
+}
+
+footer h4{
+    font-size: 33px;
+    width: 75%;
+    margin-bottom: 25px;
+}
+
+footer hr{
+    margin-bottom: 50px;
+    border-color: #7289da;
+}
+
+footer div#col-left img{
+    width: 5%;
+}
+
+footer div#col-left div#social, footer div#col-left span,
+footer div#col-left i {
+    color: white;
+}
+
+footer div#col-left span{
+    margin-right: 10px;
+}
+
+footer div#col-left div#social i{
+    margin:15px 15px 0 0;
 }
